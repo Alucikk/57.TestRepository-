@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System;
+using System.Text;
+class Program
 {
     static void Main()
     {
@@ -7,6 +9,12 @@
 
         Console.Write("Напишіть ваше ім'я: ");
         string userName = Console.ReadLine();
-        Console.WriteLine($"Вітаю, {userName}!");
+
+        Console.Write("Напишіть ваш вік: ");
+        string ageInput = Console.ReadLine();
+
+        Console.WriteLine($"Користувач: {userName}, вік: {ageInput} років. Вітаю, {userName}!");
+
+        Console.ReadLine();
     }
 }
